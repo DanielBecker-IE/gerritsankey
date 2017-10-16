@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How +2s happen</title>
+</head>
+<body>
+<h1>How +2s happen.</h1>
+Each file linked below displays a Sankey diagram of how a changes (returned by given gerrit query) got merged.
+
+<ul>
+{% for f in files %}
+    <li><a href="view.html?data={{f.name}}">{{f.name}}</a> modified {{f.ago}} {{f.size}}</li>
+{%- endfor %}
+</ul>
+
+<p>Author: Daniel Becker</p>
+<p>Thanks to Mike Bostock, whose <a href="http://bost.ocks.org/mike/sankey/">D3 Sankey plugin</a> was used to help build this visualisation.</p>
+<hr/>
+Generated: {{now}}<hr/>
+
+</body>
+</html>
