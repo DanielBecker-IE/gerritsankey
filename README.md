@@ -1,6 +1,9 @@
 # gerritsankey
-Generate Sankey Diagrams from Gerrit Queries 
-Usage:
+****Generate Sankey Diagrams from Gerrit Queries****
+
+![Example](tripleo-ui.png)
+ 
+**Usage:**
 gerritSankey.py sankey.cfg
 
 This will generate a index.html in the html directory with links to generated diagrams for the queries listed in the config file.
